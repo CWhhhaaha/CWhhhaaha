@@ -1,41 +1,44 @@
-# Hi there, I'm Wei Chen
+# Wei Chen
 
-I am a machine learning and AI enthusiast focused on building practical projects around deep learning, transformers, and data-driven applications.
+Machine Learning and AI builder focused on practical deep learning systems, Transformer architectures, and data-driven applications.
+
+[Resume](./resume.pdf) | [GitHub](https://github.com/CWhhhaaha)
 
 ## About Me
 
-- Interested in machine learning, NLP, LLMs, and quantitative or data-intensive systems
-- Building projects from first principles and documenting the full implementation process
-- Currently sharing work publicly on GitHub as I expand my project portfolio
+- Building end-to-end ML projects with an emphasis on clear implementation, reproducible workflows, and readable documentation
+- Interested in NLP, LLMs, Transformers, market intelligence systems, and applied data analysis
+- Looking to grow through hands-on engineering work in machine learning and AI product development
 
 ## Featured Projects
 
 ### [My_Transformer](https://github.com/CWhhhaaha/My_Transformer)
 From-scratch PyTorch implementation of an encoder-decoder Transformer for machine translation.
 
-- Built core Transformer modules manually, including attention, positional encoding, training, evaluation, and inference
-- Added documentation, testing, and visualization for training curves and attention maps
-- Tech stack: Python, PyTorch
+- Implemented attention, positional encoding, training, evaluation, and inference modules from the ground up
+- Added documentation, tests, and visualization outputs for loss curves and attention maps
+- Stack: `Python` `PyTorch` `NLP` `Transformer`
 
 ### [Global-Market-Newsboard](https://github.com/CWhhhaaha/Global-Market-Newsboard)
-Open-source market news dashboard for retail traders.
+Open-source real-time market news dashboard for retail traders.
 
-- Aggregates and presents market-relevant news in a practical interface
-- Focused on turning raw information into a more usable workflow for decision support
-- Tech stack: Python
+- Organized market-relevant information into a more actionable workflow
+- Built as a practical project around data collection, signal presentation, and user-facing utility
+- Stack: `Python` `Data Processing` `Market News`
+
+## Skills
+
+`Python` `PyTorch` `Machine Learning` `Deep Learning` `Transformer` `NLP` `LLM` `Data Analysis`
 
 ## Resume
 
-- [View My Resume](./resume.pdf)
+My latest resume is available here: [resume.pdf](./resume.pdf)
 
-## GitHub
+## Contact
 
-- GitHub Profile: [CWhhhaaha](https://github.com/CWhhhaaha)
-
-## Focus Areas
-
-`Python` `PyTorch` `Transformer` `NLP` `Machine Learning` `LLM` `Data Analysis`
+- GitHub: [CWhhhaaha](https://github.com/CWhhhaaha)
+- Email: `cw666666wxid@gmail.com`
 
 ---
 
-I am continuing to build and publish projects that reflect hands-on engineering, clear documentation, and practical problem solving.
+I use GitHub to document projects I build, what I learn from them, and how I turn ideas into working systems.
