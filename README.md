@@ -26,7 +26,7 @@ Open-source market news dashboard for retail traders.
 
 ## Resume
 
-- [View My Resume](./Resume_WeiChen.pdf)
+- [View My Resume](./resume.pdf)
 
 ## GitHub
 
