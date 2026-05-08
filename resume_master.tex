@@ -79,7 +79,7 @@
 \resumesection{Research Manuscripts}
 
 \begin{itemize}
-    \item \textit{Basis-Mediated Bilinear Attention: A New Method for Greatly Reducing Query--Key Pathway Parameters}. Submitted to NeurIPS 2026. Proposes BMB/BMB-UV for query-key pathway reparameterization with shared latent bases; evaluated on ViT-Base ImageNet-1K and GPT-2 C4 pretraining.
+    \item \textit{Basis-Mediated Bilinear Attention: A New Method for Greatly Reducing Query--Key Pathway Parameters}. Submitted to NeurIPS 2026. Proposes BMB/BMB-UV for query-key reparameterization in 7B-scale pretraining, reducing QK parameters by up to 95.83\% while preserving model quality.
     \item \textit{Revisiting Positional Priors in Vision Transformers with Semantic Gating}. Manuscript in preparation on semantic gating beyond static geometry-driven bias in ViT attention.
     \item \textit{Beyond Positional Encoding: Layerwise Attention Reconstruction via Query-Key Structural Priors}. Manuscript in preparation on layerwise attention reconstruction using query-key structural priors.
 \end{itemize}
@@ -87,11 +87,11 @@
 \resumesection{Skills}
 
 \begin{itemize}
-    \item \textbf{LLM Pretraining Systems:} distributed pretraining, throughput profiling, checkpointing, mixed precision, PyTorch
-    \item \textbf{Memory and Efficiency:} activation checkpointing, FlashAttention, KV-cache optimization, quantization, PEFT, LoRA, DoRA, QLoRA
-    \item \textbf{Optimization and Scaling:} Adam, AdamW, Lion, Shampoo, SOAP, Muon; scaling laws, data recipes, compute-data trade-offs, model size planning
-    \item \textbf{Post-Training and Alignment:} SFT, RLHF, preference alignment, DPO-style objectives, prompt optimization, instruction data refinement
-    \item \textbf{Agents and Coding Tools:} ReAct, tool use, multi-agent workflows, Codex, Claude Code, Kimi, Swarm, DSPy, GEPA
+    \item \textbf{LLM Pretraining:} distributed training, data-parallel training, mixed precision, checkpointing, throughput profiling, training stability
+    \item \textbf{Memory and Efficiency:} activation checkpointing, FlashAttention, KV-cache optimization, quantization, parameter-efficient tuning
+    \item \textbf{Optimization and Scaling:} Adam/AdamW, Lion, Shampoo, SOAP, Muon; scaling laws, data recipes, compute-data trade-offs, model-size planning
+    \item \textbf{Post-Training and Adaptation:} SFT, RLHF, preference optimization, LoRA, DoRA, QLoRA, instruction-data refinement
+    \item \textbf{Agentic Workflows:} tool use, ReAct-style reasoning, multi-agent coordination, prompt/program optimization; Codex, Claude Code, Kimi, Swarm
 \end{itemize}
 
 \resumesection{Selected Coursework}
