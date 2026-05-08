@@ -1,0 +1,105 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.62in]{geometry}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{newtxtext,newtxmath}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em, itemsep=0.15em, topsep=0.15em, parsep=0em, partopsep=0em}
+\titlespacing*{\section}{0pt}{0.45em}{0.25em}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\urlstyle{same}
+
+\newcommand{\resumesection}[1]{\section*{#1}}
+\newcommand{\project}[2]{%
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.45em}
+}
+\newcommand{\eduentry}[4]{
+  \textbf{#1} \hfill #2\\
+  #3\\
+  #4
+}
+\newcommand{\course}[2]{\textbf{#1} (#2)}
+\newcommand{\coursehref}[3]{\href{\detokenize{#3}}{\textbf{#1} (#2)}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Wei Chen}}\\[0.2em]
+    \href{mailto:chenwei8994@126.com}{chenwei8994@126.com} \,|\, \href{https://github.com/CWhhhaaha}{github.com/CWhhhaaha}\\
+    +86 19980818994 \,|\, International: +1 6085093756
+\end{center}
+
+\resumesection{Education}
+
+\eduentry
+{University of Wisconsin--Madison}
+{Aug 2024 -- Dec 2025}
+{M.S. in Electrical and Computer Engineering}
+{Machine Learning and Signal Processing (MLSP), GPA: 3.73 / 4.00}
+
+\vspace{0.35em}
+
+\eduentry
+{Sichuan University}
+{Sep 2020 -- Jun 2024}
+{B.S. in Flight Vehicle Control and Information Engineering}
+{GPA: 3.79 / 4.00}
+
+\resumesection{Selected Projects}
+
+\project{My\_Transformer}{\href{https://github.com/CWhhhaaha/My_Transformer}{GitHub}}
+\begin{itemize}
+    \item Built a from-scratch PyTorch encoder-decoder Transformer for machine translation, including multi-head attention, positional encoding, training, inference, and evaluation.
+    \item Implemented data preparation, greedy / beam-search decoding, BLEU evaluation, checkpointing, testing, and attention visualization.
+\end{itemize}
+
+\project{Global-Market-Newsboard}{\href{https://github.com/CWhhhaaha/Global-Market-Newsboard}{GitHub}}
+\begin{itemize}
+    \item Developed an open-source market news dashboard focused on turning real-time information streams into a more usable interface for retail traders.
+    \item Built a user-facing workflow spanning news aggregation, data handling, presentation logic, and practical decision-support design; deployed at \href{https://globalnewsboard.cn}{globalnewsboard.cn} (demo password: 123456).
+\end{itemize}
+
+\project{Campus Lane Detection}{\href{https://github.com/Maksim20010302/539-Final-Project}{GitHub}}
+\begin{itemize}
+    \item Built a course project around ultra-fast deep lane detection in PyTorch using a structure-aware lane detection pipeline with training, evaluation, visualization, and speed-testing scripts.
+    \item Adapted TuSimple / CULane-style tooling to campus driving footage and produced a 1080p / 30fps curved-lane overlay demo.
+\end{itemize}
+
+\resumesection{Research Manuscripts}
+
+\begin{itemize}
+    \item \textit{Basis-Mediated Bilinear Attention: A New Method for Greatly Reducing Query--Key Pathway Parameters}. Submitted to NeurIPS 2026. Proposes BMB/BMB-UV for query-key pathway reparameterization with shared latent bases; evaluated on ViT-Base ImageNet-1K and GPT-2 C4 pretraining.
+    \item \textit{Revisiting Positional Priors in Vision Transformers with Semantic Gating}. Manuscript in preparation on semantic gating beyond static geometry-driven bias in ViT attention.
+    \item \textit{Beyond Positional Encoding: Layerwise Attention Reconstruction via Query-Key Structural Priors}. Manuscript in preparation on layerwise attention reconstruction using query-key structural priors.
+\end{itemize}
+
+\resumesection{Skills}
+
+\begin{itemize}
+    \item \textbf{LLM Pretraining Systems:} distributed pretraining, throughput profiling, checkpointing, mixed precision, PyTorch
+    \item \textbf{Memory and Efficiency:} activation checkpointing, FlashAttention, KV-cache optimization, quantization, PEFT, LoRA, DoRA, QLoRA
+    \item \textbf{Optimization and Scaling:} Adam, AdamW, Lion, Shampoo, SOAP, Muon; scaling laws, data recipes, compute-data trade-offs, model size planning
+    \item \textbf{Post-Training and Alignment:} SFT, RLHF, preference alignment, DPO-style objectives, prompt optimization, instruction data refinement
+    \item \textbf{Agents and Coding Tools:} ReAct, tool use, multi-agent workflows, Codex, Claude Code, Kimi, Swarm, DSPy, GEPA
+\end{itemize}
+
+\resumesection{Selected Coursework}
+
+\begin{itemize}
+    \item Large Language Models and Deep Learning: \coursehref{Advanced Topics in Large Language Models}{ECE 901}{https://kangwooklee.com/901_advanced_topics_in_LLMs/}; \course{Introduction to Artificial Neural Networks}{CS 539}
+    \item Machine Learning and Optimization: \coursehref{Machine Learning}{ECE 760}{https://pages.cs.wisc.edu/~khodak/cs760fall2025/\#policies}; \course{Matrix Methods in Machine Learning}{ECE 532}; \coursehref{Topics in Mathematical Data Science}{ECE 888}{https://sites.google.com/wisc.edu/888-2025?pli=1}
+    \item Perception and Signal Processing: \course{Image Processing}{ECE 533}
+\end{itemize}
+
+\end{document}
